@@ -1,5 +1,3 @@
-// Aras aras sen
-
 // React-Router-Prevent-User-to-Lose-Entered-Data-By-Changing-Page
 import { useRef, useState } from 'react';
 
