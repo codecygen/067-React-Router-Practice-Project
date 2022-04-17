@@ -1,7 +1,7 @@
 import React from 'react';
 
 // React-Router-Nested-Routes
-// React-Router-useRouteMatch
+// React-Router-useRouteMatch-Eliminate-Hard-Coding-Paths-in-Nested-Routes
 import { Route, useParams, Link, useRouteMatch } from 'react-router-dom';
 
 import HighlightedQuote from '../components/quotes/HighlightedQuote';
@@ -15,7 +15,7 @@ const DUMMY_QUOTES = [
 const QuoteDetail = () => {
     const params = useParams();
 
-    // React-Router-useRouteMatch
+    // React-Router-useRouteMatch-Eliminate-Hard-Coding-Paths-in-Nested-Routes
     const match = useRouteMatch();
 
     const quote = DUMMY_QUOTES.find(quote => quote.id === params.quoteId);
@@ -29,14 +29,17 @@ const QuoteDetail = () => {
             <HighlightedQuote text={quote.text} author={quote.author} />
 
             {/* React-Router-Nested-Routes */}
-            <Route path={`/quotes/${params.quoteId}`} exact>
+            {/* React-Router-useRouteMatch-Eliminate-Hard-Coding-Paths-in-Nested-Routes */}
+            <Route path={match.path} exact>
                 <div className='centered'>
-                    <Link className='btn--flat' to={`/quotes/${params.quoteId}/comments`}>Load Comments</Link>
+                    {/* React-Router-useRouteMatch-Eliminate-Hard-Coding-Paths-in-Nested-Routes */}
+                    <Link className='btn--flat' to={`${match.url}/comments`}>Load Comments</Link>
                 </div>
             </Route>
 
             {/* React-Router-Nested-Routes */}
-            <Route path={`/quotes/${params.quoteId}/comments`}>
+            {/* React-Router-useRouteMatch-Eliminate-Hard-Coding-Paths-in-Nested-Routes */}
+            <Route path={`${match.path}/comments`}>
                 <Comments />
             </Route>
         </>
