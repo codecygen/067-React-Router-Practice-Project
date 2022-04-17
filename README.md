@@ -6,4 +6,4 @@
 - [src/components/quotes/QuoteForm.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/quotes/QuoteForm.js)
 
 ## React-Router-Query-Parameters
-[src/components/quotes/QuoteList.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/quotes/QuoteList.js)
+- [src/components/quotes/QuoteList.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/quotes/QuoteList.js)
