@@ -14,6 +14,7 @@
 ## React-Router-useRouteMatch-Eliminate-Hard-Coding-Paths-in-Nested-Routes
 - [src/components/quotes/QuoteDetail.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/pages/QuoteDetail.js)
 
+## React-Router-useLocation-Eliminate-Hard-Coding-Paths-in-Nested-Routes
 - [src/components/quotes/QuoteList.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/quotes/QuoteList.js)
 
 # React Router Hooks and States Used:

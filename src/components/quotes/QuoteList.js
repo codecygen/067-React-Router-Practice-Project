@@ -1,7 +1,8 @@
 import { Fragment } from 'react';
 
 // React-Router-Query-Parameters
-import { useHistory, useLocation, useRouteMatch } from 'react-router-dom';
+// React-Router-useLocation-Eliminate-Hard-Coding-Paths-in-Nested-Routes
+import { useHistory, useLocation } from 'react-router-dom';
 
 import QuoteItem from './QuoteItem';
 import classes from './QuoteList.module.css';
@@ -20,6 +21,7 @@ const sortQuotes = (quotes, ascending) => {
 const QuoteList = (props) => {
   // React-Router-Query-Parameters
   // Used to manipulate page after a button click
+  // React-Router-useLocation-Eliminate-Hard-Coding-Paths-in-Nested-Routes
   const history = useHistory();
 
   // React-Router-Query-Parameters
@@ -39,7 +41,14 @@ const QuoteList = (props) => {
 
   // React-Router-Query-Parameters
   const changeSortingHandler = () => {
-    history.push('/quotes?sort=' + (isSortingAscending ? 'desc' : 'asc'));
+    // React-Router-useLocation-Eliminate-Hard-Coding-Paths-in-Nested-Routes
+    history.push(`${location.pathname}?sort=${(isSortingAscending ? 'desc' : 'asc')}`);
+
+    // Alternative to history.push
+    // history.push({
+    //   pathname: location.pathname,
+    //   search: `?sort=${(isSortingAscending ? 'desc' : 'asc')}`
+    // });
   };
 
   return (
