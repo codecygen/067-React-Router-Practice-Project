@@ -17,6 +17,11 @@
 ## React-Router-useLocation-Eliminate-Hard-Coding-Paths-in-Nested-Routes
 - [src/components/quotes/QuoteList.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/quotes/QuoteList.js)
 
+## React-Exporting-Async-Functions-Custom-Hook-HTTP-Request
+- [src/pages/NewQuote.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/pages/NewQuote.js)
+- [src/hooks/use-http.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/hooks/use-http.js)
+- [src/lib/api.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/lib/api.js)
+
 # React Router Hooks and States Used:
 - Route
 - useParams
