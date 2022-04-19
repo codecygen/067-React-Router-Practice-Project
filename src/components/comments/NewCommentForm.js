@@ -1,5 +1,11 @@
 import { useRef } from 'react';
 
+// React-Exporting-Async-Functions-Custom-Hook-HTTP-Request-Database
+import useHttp from '../../hooks/use-http';
+
+// React-Exporting-Async-Functions-Custom-Hook-HTTP-Request-Database
+import { addComment } from '../../lib/api';
+
 import classes from './NewCommentForm.module.css';
 
 const NewCommentForm = (props) => {
