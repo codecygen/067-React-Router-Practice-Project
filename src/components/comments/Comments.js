@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 // React-Exporting-Async-Functions-Custom-Hook-HTTP-Request-Database
 import { useParams } from 'react-router-dom';
@@ -37,8 +37,12 @@ const Comments = () => {
   };
 
   // React-Exporting-Async-Functions-Custom-Hook-HTTP-Request-Database
-  const addedCommentHandler = () => {
-  };
+  // Here we wrapped the function with useCallback to prevent it to be
+  // re-rendered as this function is used in useEffect function in NewCommentForm
+  // component.
+  const addedCommentHandler = useCallback(() => {
+    sendRequest(quoteId);
+  }, [sendRequest, quoteId]);
 
   let comments;
 
