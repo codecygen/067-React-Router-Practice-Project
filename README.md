@@ -23,6 +23,7 @@
 - [src/lib/api.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/lib/api.js)
 - [src/pages/AllQuotes.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/pages/AllQuotes.js)
 - [src/components/quotes/QuoteDetail.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/pages/QuoteDetail.js)
+- [src/components/comments/Comments.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/comments/Comments.js)
 - [src/components/comments/NewCommentForm.js](https://github.com/codecygen/067-React-Router-Practice-Project/blob/main/src/components/comments/NewCommentForm.js)
 
 # React Router Hooks and States Used:
